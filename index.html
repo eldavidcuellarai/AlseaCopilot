@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promoción del día | Restaurante</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="hero" aria-label="Promoción principal">
+    <h1>¡Promoción del día!</h1>
+    <p class="subtitle">Disfruta de nuestros platillos favoritos a precios especiales solo por hoy.</p>
+    <a href="#ordenar" class="cta-btn" role="button" aria-label="Ordenar ahora">Ordenar ahora</a>
+  </header>
+  <main>
+    <section class="benefits" aria-label="Beneficios del restaurante">
+      <div class="benefit">
+        <span class="icon" aria-hidden="true">🍽️</span>
+        <h2>Calidad Premium</h2>
+        <p>Ingredientes frescos y seleccionados para ti.</p>
+      </div>
+      <div class="benefit">
+        <span class="icon" aria-hidden="true">⏱️</span>
+        <h2>Servicio Rápido</h2>
+        <p>Tu pedido listo en minutos.</p>
+      </div>
+      <div class="benefit">
+        <span class="icon" aria-hidden="true">💳</span>
+        <h2>Pago Seguro</h2>
+        <p>Transacciones protegidas y confiables.</p>
+      </div>
+    </section>
+    <section class="carousel-section" aria-label="Platillos destacados">
+      <h2 id="carousel-title">Platillos destacados</h2>
+      <div class="carousel" aria-labelledby="carousel-title">
+        <button class="carousel-btn prev" aria-label="Anterior" tabindex="0">&#8592;</button>
+        <div class="carousel-track" id="carousel-track">
+          <div class="carousel-item" aria-label="Tacos al Pastor">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Tacos al Pastor">
+            <h3>Tacos al Pastor</h3>
+          </div>
+          <div class="carousel-item" aria-label="Ensalada César">
+            <img src="https://images.unsplash.com/photo-1516685018646-5499d0a7d42f?auto=format&fit=crop&w=400&q=80" alt="Ensalada César">
+            <h3>Ensalada César</h3>
+          </div>
+          <div class="carousel-item" aria-label="Pizza Margarita">
+            <img src="https://images.unsplash.com/photo-1542281286-9e0a16bb7366?auto=format&fit=crop&w=400&q=80" alt="Pizza Margarita">
+            <h3>Pizza Margarita</h3>
+          </div>
+        </div>
+        <button class="carousel-btn next" aria-label="Siguiente" tabindex="0">&#8594;</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p><a href="#" aria-label="Aviso de privacidad">Aviso de privacidad</a> &copy; 2025 Restaurante</p>
+  </footer>
+  <script src="assets/js/carousel.js"></script>
+</body>
+</html>

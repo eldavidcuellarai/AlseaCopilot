@@ -1,0 +1,132 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f8fafc;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+.hero {
+  background: #e3f0ff;
+  text-align: center;
+  padding: 3rem 1rem 2rem 1rem;
+}
+.hero h1 {
+  color: #1565c0;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.subtitle {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+.cta-btn {
+  background: #1565c0;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px #0001;
+}
+.cta-btn:focus, .cta-btn:hover {
+  background: #003c8f;
+  outline: 2px solid #003c8f;
+}
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  background: #fff;
+  padding: 2rem 1rem;
+}
+.benefit {
+  flex: 1 1 200px;
+  max-width: 260px;
+  background: #f1f8fe;
+  border-radius: 1rem;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 1px 4px #0001;
+}
+.benefit .icon {
+  font-size: 2.2rem;
+  color: #1565c0;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.carousel-section {
+  background: #f8fafc;
+  padding: 2rem 1rem 3rem 1rem;
+  text-align: center;
+}
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.carousel-btn {
+  background: #e3f0ff;
+  border: none;
+  color: #1565c0;
+  font-size: 2rem;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.carousel-btn:focus, .carousel-btn:hover {
+  background: #1565c0;
+  color: #fff;
+  outline: 2px solid #003c8f;
+}
+.carousel-track {
+  display: flex;
+  overflow: hidden;
+  width: 320px;
+  min-height: 260px;
+}
+.carousel-item {
+  min-width: 320px;
+  transition: transform 0.5s;
+  text-align: center;
+  background: #fff;
+  border-radius: 1rem;
+  margin: 0 0.5rem;
+  box-shadow: 0 1px 4px #0001;
+  padding: 1rem 0.5rem 1.5rem 0.5rem;
+}
+.carousel-item img {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+footer {
+  background: #e3f0ff;
+  color: #222;
+  text-align: center;
+  padding: 1.2rem 1rem 1rem 1rem;
+  font-size: 1rem;
+}
+footer a {
+  color: #1565c0;
+  text-decoration: underline;
+}
+@media (max-width: 700px) {
+  .benefits {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .carousel-track, .carousel-item {
+    width: 90vw;
+    min-width: 90vw;
+    max-width: 95vw;
+  }
+}
