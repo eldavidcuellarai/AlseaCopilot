@@ -1,102 +1,58 @@
-Git es el sistema de control de versiones distribuido de código abierto que facilita las actividades de GitHub en tu laptop o computadora de escritorio. Esta hoja de referencia resume las instrucciones de línea de comandos de Git más utilizadas para una consulta rápida.
+# Aplicación Web de Promociones de Restaurante
 
-  
+Esta es una aplicación web responsiva que muestra las promociones y platillos destacados de un restaurante. La aplicación está diseñada para ofrecer una experiencia de usuario intuitiva y accesible.
 
-## Instalación
+## Características
 
-  
+- **Sección Hero**: Presenta la promoción principal del día con un llamado a la acción para ordenar.
+- **Beneficios del Restaurante**: Muestra tres beneficios clave:
+  - Calidad Premium con ingredientes frescos
+  - Servicio Rápido
+  - Sistema de Pago Seguro
 
-**GitHub para Windows** https://windows.github.com
+- **Carrusel de Platillos**: Exhibe los platillos destacados con:
+  - Navegación intuitiva mediante botones
+  - Imágenes optimizadas de alta calidad
+  - Títulos descriptivos para cada platillo
 
-  
-
-**GitHub para Mac** https://mac.github.com
-
-  
-
-**Git para Todas las Plataformas** http://git-scm.com
-
-  
-
-_Las distribuciones de Git para sistemas Linux y POSIX están disponibles en el sitio web oficial de Git SCM._
-
-  
-
-## Configurar herramientas
-
-  
-
-Configura la información de usuario para todos los repositorios locales:
-
-  
-
-```bash
-
-$ git config --global user.name "[nombre]"
-
-# Establece el nombre que quieres adjuntar a tus commits
-
-  
-
-$ git config --global user.email "[correo electrónico]"
-
-# Establece el correo electrónico que quieres adjuntar a tus commits
-
-  
-
-$ git config --global color.ui auto
-
-# Habilita la coloración útil de la salida de línea de comandos
+## Estructura del Proyecto
 
 ```
-
-  
-
-## Crear repositorios
-
-  
-
-Al comenzar con un nuevo repositorio, solo necesitas hacerlo una vez, ya sea localmente para luego subirlo a GitHub, o clonando un repositorio existente:
-
-  
-
-```bash
-
-$ git init
-
-# Convierte un directorio existente en un repositorio git
-
-  
-
-$ git clone [url]
-
-# Clona (descarga) un repositorio que ya existe en GitHub, incluyendo todos los archivos, ramas y commits
-
+├── index.html
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   └── js/
+│       └── carousel.js
 ```
 
-  
+- `index.html`: Contiene la estructura principal y el contenido de la página
+- `assets/css/style.css`: Estilos y diseño responsivo
+- `assets/js/carousel.js`: Funcionalidad del carrusel de platillos
 
-## El archivo .gitignore
+## Características de Accesibilidad
 
-  
+La aplicación está desarrollada siguiendo las mejores prácticas de accesibilidad web:
+- Etiquetas ARIA para mejorar la navegación
+- Estructura semántica del HTML
+- Botones y enlaces claramente identificados
+- Imágenes con textos alternativos
 
-A veces puede ser una buena idea excluir archivos para que no sean rastreados con Git. Esto se hace típicamente en un archivo especial llamado `.gitignore`.
+## Tecnologías Utilizadas
 
-  
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
 
-Puedes encontrar plantillas útiles para archivos `.gitignore` en github.com/github/gitignore.
+## Uso
 
-  
+1. Abre el archivo `index.html` en tu navegador web
+2. Navega por las diferentes secciones usando el menú
+3. Explora los platillos destacados usando los botones del carrusel
 
-## Ramas
+## Copyright
 
-  
-
-Las ramas son una parte importante del trabajo con Git. Cualquier commit que hagas será en la rama en la que actualmente estés "checked out". Usa `git status` para ver cuál es esa rama.
-
-  
-
-```bash
+© 2025 Restaurante. Todos los derechos reservados.
 
 $ git branch [nombre-rama]
 
