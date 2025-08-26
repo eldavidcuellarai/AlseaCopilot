@@ -7,10 +7,30 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header class="hero" aria-label="Promoción principal">
+  <nav class="main-nav">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="https://www.alsea.net/img/layout/alsea.png" alt="Logo Alsea" class="logo-img">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <button class="mobile-menu-btn" aria-label="Menú móvil">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <header class="hero" aria-label="Promoción principal" id="inicio">
     <h1>¡Promoción del día!</h1>
     <p class="subtitle">Disfruta de nuestros platillos favoritos a precios especiales solo por hoy.</p>
-    <a href="#ordenar" class="cta-btn" role="button" aria-label="Ordenar ahora">Ordenar ahora</a>
+    <a href="#menu" class="cta-btn" role="button" aria-label="Ordenar ahora">Ordenar ahora</a>
   </header>
   <main>
     <section class="benefits" aria-label="Beneficios del restaurante">
@@ -51,10 +71,116 @@
         <button class="carousel-btn next" aria-label="Siguiente" tabindex="0">&#8594;</button>
       </div>
     </section>
+
+    <section class="menu-section" aria-label="Menú del día">
+      <h2>Menú del Día</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=400&q=80" alt="Sopa del día">
+          <h3>Sopa del Día</h3>
+          <p>Crema de champiñones con crutones</p>
+          <span class="price">$89</span>
+        </div>
+        <div class="menu-item">
+          <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=400&q=80" alt="Plato fuerte">
+          <h3>Plato Fuerte</h3>
+          <p>Salmón a la plancha con vegetales</p>
+          <span class="price">$199</span>
+        </div>
+        <div class="menu-item">
+          <img src="https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=400&q=80" alt="Postre">
+          <h3>Postre</h3>
+          <p>Tiramisú casero</p>
+          <span class="price">$79</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials" aria-label="Testimonios de clientes">
+      <h2>Lo que dicen nuestros clientes</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>"La mejor experiencia culinaria que he tenido. El servicio es excepcional."</p>
+          <cite>- María González</cite>
+        </div>
+        <div class="testimonial">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>"Ingredientes frescos y sabores auténticos. ¡Volveré pronto!"</p>
+          <cite>- Carlos Rodríguez</cite>
+        </div>
+        <div class="testimonial">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>"Un ambiente acogedor y platillos deliciosos. Totalmente recomendado."</p>
+          <cite>- Ana Martínez</cite>
+        </div>
+      </div>
+    </section>
+
+    <section class="location-contact" aria-label="Ubicación y contacto">
+      <div class="contact-info">
+        <h2>Encuéntranos</h2>
+        <address>
+          <p>📍 Av. Insurgentes Sur 1234</p>
+          <p>📞 Tel: (55) 1234-5678</p>
+          <p>✉️ Email: info@restaurante.com</p>
+        </address>
+        <div class="hours">
+          <h3>Horario</h3>
+          <p>Lunes a Viernes: 8:00 - 22:00</p>
+          <p>Sábado y Domingo: 9:00 - 23:00</p>
+        </div>
+      </div>
+      <div class="map-container">
+        <img src="https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?auto=format&fit=crop&w=800&q=80" alt="Mapa de ubicación" class="map-placeholder">
+      </div>
+    </section>
+
+    <section class="newsletter" aria-label="Suscripción al boletín">
+      <div class="newsletter-content">
+        <h2>¡Recibe nuestras promociones!</h2>
+        <p>Suscríbete a nuestro boletín y recibe ofertas exclusivas.</p>
+        <form class="newsletter-form" action="#" method="POST">
+          <input type="email" placeholder="Tu correo electrónico" required aria-label="Correo electrónico">
+          <button type="submit" class="cta-btn">Suscribirse</button>
+        </form>
+      </div>
+    </section>
   </main>
-  <footer>
-    <p><a href="#" aria-label="Aviso de privacidad">Aviso de privacidad</a> &copy; 2025 Restaurante</p>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Acerca de</h3>
+        <ul>
+          <li><a href="#">Nuestra Historia</a></li>
+          <li><a href="#">Equipo</a></li>
+          <li><a href="#">Carreras</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Ayuda</h3>
+        <ul>
+          <li><a href="#">Preguntas Frecuentes</a></li>
+          <li><a href="#">Política de Privacidad</a></li>
+          <li><a href="#">Términos y Condiciones</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Síguenos</h3>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook">📱</a>
+          <a href="#" aria-label="Instagram">📸</a>
+          <a href="#" aria-label="Twitter">🐦</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Restaurante. Todos los derechos reservados.</p>
+    </div>
   </footer>
+
   <script src="assets/js/carousel.js"></script>
+  <script src="assets/js/navigation.js"></script>
 </body>
 </html>
